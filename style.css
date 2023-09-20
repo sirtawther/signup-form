@@ -40,3 +40,22 @@
 }
 
 
+.container {
+    display: flex;
+}
+
+.first-last,.email-phone,.passwords,.create {
+    display: flex;
+    gap: 8px;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quote,.create {
+    height: 35vh;
+    background-color: aliceblue;
+}

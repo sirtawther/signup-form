@@ -1,20 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="background">
-    <img class="background-photo" src="background.jpg" alt="Background photo for Odin project">
-    <div class="head-wrapper">
-        <img class="odin" src="odin-lined.png" alt="">
-        <h1 class="logo-text">The Odin Project</h1>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="background">
+        <img
+          class="background-photo"
+          src="background.jpg"
+          alt="Background photo for Odin project"
+        />
+        
+        <div class="head-wrapper">
+          <img class="odin" src="odin-lined.png" alt="" />
+          <h1 class="logo-text">The Odin Project</h1>
+        </div>
+      </div>
+      <div class="wrapper">
+          
+          <div class="quote">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad temporibus nulla nobis nemo modi labore fuga unde delectus sit, incidunt ipsam accusantium voluptates? Nostrum illo magnam aliquid recusandae repellat error.
+              <br>
+              Sign up <i>now</i> to get started.
+              <br>
+              You <i>know</i> you want to.
+            </div>
+            
+            <div class="form">
+                <h3>Let's do this</h3>
+                <br>
+                <form action="" method="post">
+                    <div class="fields">
+
+                        <div class="first-last">
+                            
+                            <div class="first">
+                            <label for="first">FIRST NAME</label>
+                            <input type="text" name="first" id="first">
+                        </div>
+                        <div class="last">
+                            <label for="last">LAST NAME</label>
+                            <input type="text" name="last" id="last">
+                        </div>
+                    </div>
+
+                    <div class="email-phone">
+                        
+                        <div class="email">
+                            <label for="email">EMAIL</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="phone">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="passwords">
+                        
+                        <div class="password">
+                            <label for="password">PASSWORD</label>
+                            <input type="text" name="password" id="password">
+                        </div>
+                        <div class="confirm">
+                            <label for="confirm">CONFIRM PASSWORD</label>
+                            <input type="text" name="confirm" id="confirm">
+                        </div>
+                    </div>
+                    <div class="create">
+                        <div>
+
+                            <button type="submit">Create Account</button>
+                        </div>
+                        <div>Already have an account? <a href="http://www.google.com">Login</a></div>
+                    </div>
+                </div>
+                </form>
+            </div>
+            
+        </div>
 
     </div>
-</div>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
