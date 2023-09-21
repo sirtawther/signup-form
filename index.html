@@ -18,31 +18,41 @@
         
         <div class="head-wrapper">
           <img class="odin" src="odin-lined.png" alt="" />
-          <h1 class="logo-text">The Odin Project</h1>
+          <h1 class="logo-text">Odin</h1>
         </div>
       </div>
       <div class="wrapper">
           
           <div class="quote">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad temporibus nulla nobis nemo modi labore fuga unde delectus sit, incidunt ipsam accusantium voluptates? Nostrum illo magnam aliquid recusandae repellat error.
-              <br>
-              Sign up <i>now</i> to get started.
-              <br>
-              You <i>know</i> you want to.
+            <div>
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad temporibus nulla nobis nemo modi labore fuga unde delectus sit, incidunt ipsam accusantium voluptates? Nostrum illo magnam aliquid recusandae repellat error.
+      
+
+                  Sign up <i>now</i> to get started.
+                  <br>
+                  <br>
+                  You <i>know</i> you want to.
+                </div>
             </div>
             
             <div class="form">
-                <h3>Let's do this</h3>
+                
                 <br>
-                <form action="" method="post">
-                    <div class="fields">
+                <form action="success.html" method="get">
+                  
+                <div class="fields">
+                    <h3>Let's do this</h3>
 
                         <div class="first-last">
                             
                             <div class="first">
                             <label for="first">FIRST NAME</label>
-                            <input type="text" name="first" id="first">
-                        </div>
+                       
+                                
+                                <input type="text" name="first" id="first" required>
+                           
+                            </div>
                         <div class="last">
                             <label for="last">LAST NAME</label>
                             <input type="text" name="last" id="last">
@@ -53,11 +63,12 @@
                         
                         <div class="email">
                             <label for="email">EMAIL</label>
-                            <input type="text" name="email" id="email">
+                            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" id="email" required>
                         </div>
                         <div class="phone">
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="text" name="phone" id="phone">
+                            <input type="tel" name="phone" minlength="9" maxlength="15" id="phone">
+                        
                         </div>
                     </div>
                     
@@ -65,20 +76,24 @@
                         
                         <div class="password">
                             <label for="password">PASSWORD</label>
-                            <input type="text" name="password" id="password">
+                            <input type="text" name="password" id="password" required>
                         </div>
                         <div class="confirm">
                             <label for="confirm">CONFIRM PASSWORD</label>
-                            <input type="text" name="confirm" id="confirm">
+                            <input type="text" name="confirm" id="confirm" required>
                         </div>
                     </div>
-                    <div class="create">
-                        <div>
+                </div>  
 
-                            <button type="submit">Create Account</button>
+
+                  <div class="create">
+                      <div>
+                          <button id="createAccount" type="submit">Create Account</button>
                         </div>
-                        <div>Already have an account? <a href="http://www.google.com">Login</a></div>
-                    </div>
+                        <div>Already have an account? <a href="#">Login</a></div>
+                  </div>
+
+                </div>
                 </div>
                 </form>
             </div>
@@ -88,4 +103,5 @@
     </div>
   </body>
   <script src="script.js"></script>
+  
 </html>
